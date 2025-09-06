@@ -1,7 +1,7 @@
 from pygame import *
 
-win_width = 700
-win_height = 500
+win_width = 900
+win_height = 700
 window = display.set_mode((win_width, win_height))
 display.set_caption('Maze Game')
 back = (0, 0, 0)
@@ -137,4 +137,5 @@ while run:
             winner = transform.scale(image.load('game-over_1.png'), (win_width, win_height))
             window.blit(winner, (0, 0))
             finish = True
+
     display.update()
